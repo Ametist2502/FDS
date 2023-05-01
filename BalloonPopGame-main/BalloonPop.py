@@ -30,7 +30,7 @@ rectBalloon = imgBalloon.get_rect()
 rectBalloon.x, rectBalloon.y = 500, 300
 
 # Variables
-speed = 7
+speed = 10
 score = 0
 startTime = time.time()
 totalTime = 60
@@ -78,7 +78,7 @@ while start:
 
         if hands:
             hand = hands[0]
-            x, y = hand['lmList'][8][0:2]
+            x, y, z = hand['lmList'][8][0:2]
             if rectBalloon.collidepoint(x, y):
                 resetBalloon()
                 score += 10
