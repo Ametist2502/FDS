@@ -108,5 +108,5 @@ class Game:
                 return "menu"
 
 
-        cv2.imshow("Frame", self.frame)
+        # cv2.imshow("Frame", self.frame)
         cv2.waitKey(1)
